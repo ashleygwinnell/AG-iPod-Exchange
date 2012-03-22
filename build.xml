@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project AG iPod Exchange">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--but modified by hand!                                      -->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="AG iPod Exchange.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="IPodExchange"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="jid3lib-0.5.4.jar"/>
+        </jar>
+    </target>
+</project>
